@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Wrapper from "./components/Wrapper"
+import Screen from "./components/Screen"
+import ButtonBox from './components/ButtonBox'
+import Button from './components/Button'
 import './App.css'
 
 function App() {
@@ -8,7 +10,14 @@ function App() {
 
   return (
     <>
-      
+      <Wrapper>
+        <Screen value="0" />
+        <ButtonBox>
+  
+          <Button className="" value="" onClick={() => {console.log("Clicked")}}/>
+
+        </ButtonBox>
+      </Wrapper>
     </>
   )
 }
